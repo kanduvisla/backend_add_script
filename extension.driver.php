@@ -40,9 +40,9 @@
 			
 			$tag = new XMLElement('script', $javaScript, array('type'=>'text/javascript'));
 
-            Administration::instance()->Page->addElementToHead($tag);
-            Administration::instance()->Page->addScriptToHead(URL.'/extensions/backend_add_script/assets/custom.js');
-            Administration::instance()->Page->addStylesheetToHead(URL.'/extensions/backend_add_script/assets/custom.css');
-		}	
+			Administration::instance()->Page->addElementToHead($tag);
+			Administration::instance()->Page->addScriptToHead(URL.'/extensions/backend_add_script/assets/custom.js');
+			Administration::instance()->Page->addStylesheetToHead(URL.'/extensions/backend_add_script/assets/custom.css');
+		}
 	}
 ?>
