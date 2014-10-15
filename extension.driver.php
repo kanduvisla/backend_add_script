@@ -31,8 +31,14 @@
 			$idEntry= isset($callback['context']['entry_id']) ? '"'.$callback['context']['entry_id'].'"' : 'false';
 			
 			// User information:
-			$javaScript.= "var user_id   = ".Administration::instance()->Author->get('id').";\n";
-			$javaScript.= "var user_type = '".Administration::instance()->Author->get('user_type')."';\n";
+			$author = null;
+			if (is_callable(array('Symphony', 'Author'))) {
+				$author = Symphony::Author();
+			} else {
+				$author = Administration::instance()->Author;
+			}
+			$javaScript.= "var user_id   = ".$author->get('id').";\n";
+			$javaScript.= "var user_type = '".$author->get('user_type')."';\n";
 			$javaScript.= "var driver    = ".$driver.";\n";
 			$javaScript.= "var action    = ".$action.";\n";
 			$javaScript.= "var section   = ".$section.";\n";
