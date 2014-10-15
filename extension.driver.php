@@ -2,22 +2,6 @@
 	Class extension_backend_add_script extends Extension
 	{
 		/**
-		* About this extension:
-		*/
-		public function about()
-		{
-			return array(
-				'name' => 'Backend add script',
-				'version' => '1.2',
-				'release-date' => '2011-12-15',
-				'author' => array(
-					'name' => 'Twisted Interactive',
-					'website' => 'http://www.twisted.nl'),
-				'description' => 'Adds a hook to the backend so you can easily make JavaScript adjustments on certain pages'
-			);
-		}
-		
-		/**
 		* Set the delegates
 		*/
 		public function getSubscribedDelegates()
