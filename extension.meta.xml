@@ -3,10 +3,10 @@
 	<name>Backend Add Script</name>
 	<description>Adds a hook to the backend so you can easily make JavaScript and CSS adjustments on certain pages.</description>
 	<repo type="github">https://github.com/TwistedInteractive/backend_add_script</repo>
-    <types>
-        <type>Other</type>
-        <type>Workflow</type>
-    </types>
+	<types>
+		<type>Other</type>
+		<type>Workflow</type>
+	</types>
 	<authors>
 		<author>
 			<name github="TwistedInteractive">Twisted Interactive</name>
@@ -14,7 +14,10 @@
 		</author>
 	</authors>
 	<releases>
+		<release version="1.3" date="2014-10-15" min="2.4.0" max="2.5.x">
+			- Compatibility with Symphony 2.5.x
+		</release>
 		<release version="1.2" date="2011-12-15" min="2.3"/>
-        <release version="1.1" date="2010-08-17" max="2.2.x"/>
+		<release version="1.1" date="2010-08-17" max="2.2.x"/>
 	</releases>
 </extension>
